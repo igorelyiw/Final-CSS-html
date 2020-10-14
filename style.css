@@ -1,0 +1,353 @@
+@import url(reset.css);
+@font-face{
+    font-family:'LeagueGothic';
+    src:url(fonts/LeagueGothic-Regular.otf);
+}
+body{
+    background-image: url(image/bg.png);
+   
+}
+p{
+    font-size: 18px;
+    color: white;
+    line-height: 1.4;
+}
+h1{
+    font-size: 60px;
+    color: white;
+     font-family: "LeagueGothic";
+      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+h2{
+    font-size: 32px;
+    color: #edbfff;
+     font-family: "LeagueGothic";
+      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+h3{
+    font-family: "LeagueGothic";
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    
+}
+h4{
+    font-family: "LeagueGothic";
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 10px;
+}
+h5{
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 5px;
+    
+}
+.container{
+    width: 960px;
+    min-height: 255px;
+    margin: 0 auto;
+    
+}
+.header_info{
+    display: flex;
+    justify-content: space-around;
+}
+   
+
+header{
+    margin-bottom: 132px;
+}
+.header_top{
+   
+    height: 110px;
+     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    font-family: 'LeagueGothic',sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+   
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+     height: 40px;
+    min-width: 70px;
+}
+a{
+   
+   
+    line-height: 1;
+    text-decoration: none;
+  margin-right: 45px;
+     color: white;
+   
+    
+}
+a:hover{
+     border-bottom: 3px solid #edbfff;
+}
+.header_bottom{
+    
+   height: 400px;
+    background-image: url(image/overlay.png);
+    
+     
+     
+}
+.header_text{
+   width: 50%;
+    height: 400px;
+    margin-top: 80px;
+  position: relative;
+   
+    
+   
+}
+.iphone{
+    width: 274px;
+    height: 434px;
+    background-image: url(image/Iphone.png);
+    margin-top: -20px;
+}
+
+section{
+    min-height: 342px;
+    background-image: url(image/section.png);
+}
+.section_top{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+
+.box{margin-top: 80px;
+    height: 167px;
+    width: 25%;
+    position: relative;
+    
+
+}
+.box:nth-child(1)::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 31px;
+    background-image: url(image/icon/key.png);
+    position: absolute;
+    top: 5px;
+    left: -55px;
+}.box:nth-child(2)::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 31px;
+    background-image: url(image/icon/dialog.png);
+    position: absolute;
+    top: 5px;
+    left: -55px;
+}.box:nth-child(3)::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 31px;
+    background-image: url(image/icon/muzik.png);
+    position: absolute;
+    top: 5px;
+    left: -55px;
+}
+
+
+.section_button{
+    font-size: 18px;
+  font-family: "LeagueGothic";
+  color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
+    text-align: right;
+    text-transform: uppercase;
+}
+.section_button:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+
+.section_bottom{
+    height: 605px;
+    background-image: url(image/section_bottom.png);
+    padding-top: 100px;
+    
+    
+    
+    
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+    margin-bottom: 90px;
+}
+.blog{
+    margin-left: 25px;
+    width: 40%;
+    min-height: 200px;
+    color: black;
+    background-color: white;
+    padding: 40px;
+position: relative;
+}
+.p_bottom{
+     font-size: 16px;
+    color: black;
+}
+.blog::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 51px;
+    background-image: url(image/icon/blog.png);
+    position: absolute;
+   top: 33px;
+    left: -25px;
+}
+.updates{
+     margin-left: 25px;
+    width: 40%;
+    min-height: 200px;
+    color: black;
+    
+    padding: 40px;
+    
+
+}
+.recent_updates{
+    height: 55px;
+    margin-left: 60px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    
+}
+.recent_updates::before{
+    content: '';
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    background-image: url(image/icon/updates_top.png);
+    position: absolute;
+    top: 0;
+    left: -59px;
+}.recent_updates:nth-child(2)::before{
+    content: '';
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    background-image: url(image/icon/updates_center.png);
+    position: absolute;
+    top: 0;
+    left: -59px;
+}.recent_updates:nth-child(3)::before{
+    content: '';
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    background-image: url(image/icon/updates_bottom.png);
+    position: absolute;
+    top: 0;
+    left: -59px;
+}
+  
+.logos{
+   width: 90%;
+    height: 65px;
+    background-image: url(image/logos.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+   
+}
+footer{
+    min-height: 200px;
+    background-image: url(image/footer_top.png);
+}
+.footer_top{
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.categories{
+    width: 26%;
+    height: 200px;
+}
+.pigbull {
+  font-size: 48px;
+  font-family: "LeagueGothic";
+  color: rgb(69, 69, 69);
+  text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.footer_bot{
+   
+    height: 114px;
+    background-image: url(image/bg%20copy.png);
+     
+    
+    font-family: 'LeagueGothic',sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+       
+}
+
+       
+    
+    @media screen and (max-width:968px){
+    .container{
+        width: 960px;
+       
+    }
+    
+    @media screen and (max-width:768px){
+    .container{
+        width: 748px;
+           }
+        .nav{
+            width: 100%;
+            margin-top: 35px;
+        }
+        .box{
+                width: 10%;
+            }
+        @media screen and (max-width:650px){
+    .container{
+        width: 648px;
+           }
+            .blog{
+                width: 100%;
+            }
+            ul{
+                display: block;
+                
+            }
+        }
+        @media screen and (max-width:320px){
+    .container{
+        width: 310px;
+           }
+            .box{
+                width: 100%;
+            }
+            .iphone{
+                display: none;
+            }
+            
+        }
